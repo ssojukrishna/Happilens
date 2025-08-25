@@ -60,7 +60,6 @@
 - [x] ✅ Responsive UI framework setup
 
 ### Documentation
-- [x] ✅ Copilot instructions for better code generation
 - [x] ✅ Agile process documentation
 - [x] ✅ User stories and product backlog
 - [x] ✅ Comprehensive README with setup instructions
