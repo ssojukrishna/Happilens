@@ -1,37 +1,36 @@
-# DataBoard - Global Happiness Explorer
+# HappiLens - Global Happiness Explorer
 
-A data visualization platform for exploring global happiness and development indicators, built using Agile/Scrum methodology.
+A comprehensive data visualization platform for exploring global happiness and development indicators, built using Agile/Scrum methodology with Vue.js 3.
 
 ## 🎯 Project Overview
 
-DataBoard helps users explore and understand the relationships between happiness and various development indicators across countries and regions. The platform provides interactive visualizations that make complex global data accessible and insightful.
+HappiLens helps users explore and understand the relationships between happiness and various development indicators across 100 countries from 7 global regions. The platform provides interactive visualizations that make complex global data accessible and insightful.
 
 ## 🚀 Features
 
-### Current Features
+### Implemented Features
 - **Country Trends Analysis**: Explore indicator trends for selected countries over time periods
-- **Interactive Navigation**: Clean, responsive interface for accessing different analysis views
-
-### Planned Features (Coming Soon)
-- **Happiness vs Indicators Comparison**: Compare happiness index with development indicators
-- **Regional Analysis**: Visualize happiness distribution across world regions  
-- **India Dashboard**: Specialized dashboard showing India's happiness correlations
-- **Regional Country Comparison**: Compare countries within regions on chosen indicators
+- **Happiness vs Indicators Comparison**: Interactive scatter plots comparing happiness with development indicators for all 100 countries
+- **Regional Analysis**: Visualize happiness distribution across world regions with multiple chart types
+- **India Dashboard**: Specialized dashboard showing India's happiness correlations and metrics
+- **Regional Country Comparison**: Compare countries within regions with ranking systems
+- **Interactive Navigation**: Clean, responsive interface with modern Vue.js design
 
 ## 🛠️ Technology Stack
 
 - **Frontend**: Vue.js 3 with Composition API
 - **Build Tool**: Vite
-- **Visualization**: Chart.js, Vue-Chart.js, Plotly.js
-- **HTTP Client**: Axios
+- **Visualization**: Chart.js for interactive charts
+- **HTTP Client**: Axios (with comprehensive mock data systems)
 - **Routing**: Vue Router
-- **Deployment**: GitHub Pages
+- **Deployment**: GitHub Pages ready
 
-## 📊 Data Sources
+## 📊 Data Coverage
 
-- [World Happiness Report](https://data.worldhappiness.report/map)
-- [World Bank Indicators API](https://datahelpdesk.worldbank.org/knowledgebase/articles/889392)
-- [Country Classifications](https://datahelpdesk.worldbank.org/knowledgebase/articles/906519)
+- **Countries**: 100 countries across 7 global regions
+- **Regions**: North America, Europe & Central Asia, East Asia & Pacific, South Asia, Latin America & Caribbean, Middle East & North Africa, Sub-Saharan Africa
+- **Indicators**: GDP per Capita, Life Expectancy, Unemployment Rate, Education Expenditure
+- **Analysis**: Correlation analysis, regional comparisons, trend visualization
 
 ## 🏃‍♂️ Getting Started
 
@@ -43,8 +42,8 @@ DataBoard helps users explore and understand the relationships between happiness
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
-cd HappiLens
+git clone https://github.com/ssojukrishna/Happilens.git
+cd Happilens
 ```
 
 2. Install dependencies:
@@ -128,6 +127,6 @@ This project is for educational purposes as part of an Agile software developmen
 
 ## 🔗 Links
 
-- [Live Demo](# "Will be added after deployment")
-- [Jira Board](# "Add your Jira board link")
+- [GitHub Repository](https://github.com/ssojukrishna/Happilens)
+- [Live Demo](# "Will be deployed to GitHub Pages")
 - [Team Documentation](docs/)
