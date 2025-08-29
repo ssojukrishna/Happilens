@@ -3,27 +3,24 @@
     <nav class="navbar">
       <div class="nav-container">
         <router-link to="/" class="nav-brand">
-          <h2>DataBoard</h2>
+          <h2>HappliLens</h2>
         </router-link>
         
         <ul class="nav-menu">
           <li class="nav-item">
-            <router-link to="/" class="nav-link">Home</router-link>
+            <router-link to="/country-trends" >Country Trends</router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/country-trends" class="nav-link">Country Trends</router-link>
+            <router-link to="/happiness-comparison" >Happiness vs Indicators</router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/happiness-comparison" class="nav-link">Happiness vs Indicators</router-link>
+            <router-link to="/regional-view" >Regional View</router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/regional-view" class="nav-link">Regional View</router-link>
+            <router-link to="/india-dashboard" >India Dashboard</router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/india-dashboard" class="nav-link">India Dashboard</router-link>
-          </li>
-          <li class="nav-item">
-            <router-link to="/region-comparison" class="nav-link">Region Comparison</router-link>
+            <router-link to="/region-comparison" >Region Comparison</router-link>
           </li>
         </ul>
       </div>
@@ -32,13 +29,6 @@
     <main class="main-content">
       <router-view />
     </main>
-
-    <footer class="footer">
-      <div class="footer-content">
-        <p>&copy; 2025 DataBoard - Global Happiness Explorer</p>
-        <p>Built with Agile/Scrum methodology for educational purposes</p>
-      </div>
-    </footer>
   </div>
 </template>
 
@@ -55,14 +45,18 @@ export default {
   box-sizing: border-box;
 }
 
-body {
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden; /* Prevent body scrollbar */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   color: #333;
 }
 
 #app {
-  min-height: 100vh;
+  height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
 }
@@ -76,13 +70,12 @@ body {
 }
 
 .nav-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
+  width: 100%;
+  padding: 0 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70px;
+  height: 50px;
 }
 
 .nav-brand {
@@ -97,15 +90,15 @@ body {
 .nav-menu {
   display: flex;
   list-style: none;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .nav-link {
   text-decoration: none;
   color: #333;
   font-weight: 500;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
   transition: background-color 0.3s ease;
 }
 
@@ -117,38 +110,8 @@ body {
 
 .main-content {
   flex: 1;
-  padding-top: 0;
-}
-
-.footer {
-  background: #f8f9fa;
-  padding: 2rem;
-  text-align: center;
-  border-top: 1px solid #dee2e6;
-}
-
-.footer-content p {
-  color: #666;
-  margin: 0.25rem 0;
-}
-
-@media (max-width: 768px) {
-  .nav-container {
-    flex-direction: column;
-    height: auto;
-    padding: 1rem;
-  }
-  
-  .nav-menu {
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 1rem;
-    gap: 1rem;
-  }
-  
-  .nav-link {
-    padding: 0.5rem;
-    font-size: 0.9rem;
-  }
+  height: calc(100vh - 50px); /* Subtract reduced navbar height */
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 </style>

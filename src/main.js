@@ -23,7 +23,7 @@ const routes = [
 
 // Create router
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory('/HappiLens/'),
   routes
 })
 
